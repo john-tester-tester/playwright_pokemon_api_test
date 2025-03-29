@@ -1,3 +1,5 @@
+Need NodeJS installed, I was using NodeJS                  22.12.0 
+
 open in something like visual studio code, open terminal and install playwright
 
 npm install @playwright/test
