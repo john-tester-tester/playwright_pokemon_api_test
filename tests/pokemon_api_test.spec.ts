@@ -17,8 +17,8 @@ test.describe('Check pokemon API methods', () => {
     const responseBody: any = await utility.convert_response_to_JSON(await response.text());
 
     await utility.check_json_response_matches_expected_file(responseBody,
-                                                            expectedAPIResultFile,
                                                             expectedNumberOfResults,
+                                                            expectedAPIResultFile
                                                             );  
 
     });
@@ -42,9 +42,9 @@ test.describe('Check pokemon API methods', () => {
       const responseBody: any = await utility.convert_response_to_JSON(await response.text());
      
       await utility.check_json_response_matches_expected_result_in_arguments(responseBody,
-                                                                              expectedNumberOfResults,
-                                                                              expectedKeyValues
-                                                                              ); 
+                                                                            expectedNumberOfResults,
+                                                                            expectedKeyValues
+                                                                            ); 
 
     });
 

@@ -4,7 +4,7 @@ import path from 'path';
 
 export class Utility {
 
-async check_json_response_matches_expected_file (jsonResponse: any, expectedAPIResultFile: string, expectedNumberOfResults: number) {
+async check_json_response_matches_expected_file (jsonResponse: any,  expectedNumberOfResults: number, expectedAPIResultFile: string) {
 
   const expectedFilePath = path.resolve(__dirname, expectedAPIResultFile);
 
